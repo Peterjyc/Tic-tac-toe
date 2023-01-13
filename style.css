@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: (3, auto);
+}
+
+.cell {
+    border: 1px solid black;
+}
