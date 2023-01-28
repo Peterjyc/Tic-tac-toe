@@ -1,18 +1,18 @@
 /* eslint-disable */
-let gameBoard = Array(9).fill(null);
 
 let playerX = 'X';
 let playerO = 'O';
 
-let playerStatus = playerX;
+const gameBoard = {
+    status : Array(9).fill(null),
+    player : playerX,
+    winStatus : null,
 
-
+}
 
 for (let i = 1; i < 10; i++){
     let cell = document.getElementById(i.toString());
     cell.addEventListener("click", function(){
-
-
         cell.innerHTML = playerStatus;
         if(playerStatus == playerX){
             gameBoard[i] = playerX;
@@ -25,5 +25,7 @@ for (let i = 1; i < 10; i++){
         console.log(gameBoard);
     })
 }
-console.log(playerStatus);
-console.log(gameBoard);
+
+function winStatus(a, b, c){
+    let [a, b, c] =
+}
