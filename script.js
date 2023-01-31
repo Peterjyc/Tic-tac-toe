@@ -4,7 +4,7 @@ let playerX = 'X';
 let playerO = 'O';
 
 const gameBoard = {
-    status : Array(9).fill(null),
+    status : new Array(9).fill(null),
     player : playerX,
     winStatus : null,
 
